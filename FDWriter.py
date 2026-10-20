@@ -105,7 +105,7 @@ def update():
 	FD.update()
 
 def write(sentence, x, y, scale=1, color=FD.WHITE):
-	str(sentence)
+	sentence = str(sentence)
 	for n in range(len(sentence)):
 		if sentence[n] != " ":
 			if n == 0:
