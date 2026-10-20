@@ -5,7 +5,7 @@ FD.init()
 screen_x = FD.screen_width
 scale_factor = 700 * screen_x // 1280
 
-font = {
+VeFont = {
 "A":[ ((-3,1),(0,-4)), ((0,-4),(3,1)), ((3,1),(-1,-2)) ],
 "B":[ ((-1,1),(-1,-4)), ((-1,-4),(2,-3)), ((2,-3),(0,-2)), ((0,-2),(2,0)), ((2,0),(-1,1)) ],
 "C":[ ((2,1),(-2,0)), ((-2,0),(-2,-3)), ((-2,-3),(2,-4)) ],
@@ -88,6 +88,14 @@ font = {
 
 }
 
+
+
+font = VeFont
+
+def load_font(path):
+	global font
+	file = open(path)
+	font = eval(file.read())
 
 
 def draw_char(char, x, y, scale, color):
