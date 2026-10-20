@@ -121,9 +121,9 @@ def write(sentence, x, y, scale=1, color=FD.WHITE):
 	for n in range(len(sentence)):
 		if sentence[n] != " ":
 			if n == 0:
-				draw_char(sentence[n], x-scale, y, scale, color)
+				draw_char(sentence[n], x-scale, y, scale, FD.BLACK)
 			else:
-				draw_char(sentence[n], x+(scale*5*n), y, scale, color)
+				draw_char(sentence[n], x+(scale*5*n), y, scale, FD.BLACK)
 		else:
 			FD.draw_line(x+(scale*5*n), y, x+(scale*5*n)+scale, y, FD.BLACK)
 
