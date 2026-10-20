@@ -1,4 +1,3 @@
-import FD_FontLoader as FL
 import framedirect as FD
 
 FD.init()
@@ -102,16 +101,8 @@ def draw_char(char, x, y, scale, color):
 
 
 
-
-
-
-
-
 def update():
 	FD.update()
-
-
-
 
 def write(sentence, x, y, scale=1, color=FD.WHITE):
 	for n in range(len(sentence)):
