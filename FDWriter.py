@@ -104,7 +104,7 @@ def draw_char(char, x, y, scale, color):
 def update():
 	FD.update()
 
-def write(sentence, x, y, scale=1, color=FD.WHITE):
+def write(sentence, x, y, scale=4, color=FD.WHITE):
 	sentence = str(sentence)
 	for n in range(len(sentence)):
 		if sentence[n] != " ":
